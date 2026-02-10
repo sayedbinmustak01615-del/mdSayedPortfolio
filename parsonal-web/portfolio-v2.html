@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Md Sayedul Islam Raiyan — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="portfolio-v2.css"/>
+</head>
+<body>
+
+<!-- FLOATING CONTROLS -->
+<div class="floating-controls">
+  <button class="control-btn" id="themeToggle" title="Dark/Light Mode">
+    <i class="fas fa-moon"></i>
+  </button>
+  <button class="control-btn" id="langToggle" title="Language Switch">
+    <span class="lang-text">EN</span>
+  </button>
+  <button class="control-btn" id="downloadCV" title="Download CV">
+    <a href="cv.pdf"><i class="fas fa-download"></i></a>
+  </button>
+</div>
+
+<!-- ANIMATED BACKGROUND -->
+<div class="animated-bg">
+  <div class="gradient-orb orb-1"></div>
+  <div class="gradient-orb orb-2"></div>
+  <div class="gradient-orb orb-3"></div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon">
+        <img src="amar-sobi-logo.png" alt="logo">
+      </div>
+      <span data-bn="সাইদুল ইসলাম রাইয়ান" data-en="Sayedul Islam Raiyan">সাইদুল ইসলাম রাইয়ান</span>
+    </div>
+    <nav class="nav-menu">
+      <a href="#home" data-bn="হোম" data-en="Home">হোম</a>
+      <a href="#about" data-bn="সম্পর্কে" data-en="About">সম্পর্কে</a>
+      <a href="#education" data-bn="শিক্ষা" data-en="Education">শিক্ষা</a>
+      <a href="#skills" data-bn="দক্ষতা" data-en="Skills">দক্ষতা</a>
+      <a href="#contact" data-bn="যোগাযোগ" data-en="Contact">যোগাযোগ</a>
+    </nav>
+    <button class="mobile-menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i>
+        <span data-bn="আসসালামু আলাইকুম" data-en="Assalamu Alaikum">আসসালামু আলাইকুম</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line" data-bn="মোহাম্মদ সাইদুল ইসলাম" data-en="Mohammad Sayedul Islam">মোহাম্মদ সাইদুল ইসলাম </span>
+      </h1>
+      <div class="typing-wrapper">
+        <span data-bn="আমি একজন" data-en="I am a">আমি একজন</span>
+        <span class="typing-text"></span>
+      </div>
+      <p class="hero-tagline" data-bn="ইলম, প্রযুক্তি ও দক্ষতার সমন্বয়ে এগিয়ে চলা" data-en="Advancing with knowledge, technology and skills">"ইলম, প্রযুক্তি ও দক্ষতার সমন্বয়ে এগিয়ে চলা"</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">
+          <i class="fas fa-envelope"></i>
+          <span data-bn="যোগাযোগ করুন" data-en="Get in Touch">যোগাযোগ করুন</span>
+        </a>
+        <button class="btn-secondary" id="downloadCVHero">
+          <i class="fas fa-download"></i>
+          <span data-bn="CV ডাউনলোড" data-en="Download CV">CV ডাউনলোড</span>
+        </button>
+      </div>
+      <div class="hero-social">
+        <a href="https://wa.me/8801850634779" target="_blank" class="social-icon whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://t.me/yourusername" target="_blank" class="social-icon telegram">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="mailto:sayedbinmustak01615@gmail.com" class="social-icon email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-wrapper">
+        <div class="glow-ring"></div>
+        <div class="profile-circle">
+          <img src="profile-placeholder.jpg" alt="Profile" id="profileImg"/>
+        </div>
+        <div class="floating-badge badge-1">
+          <i class="fas fa-quran"></i>
+          <span data-bn="হাফেজ" data-en="Hafez">হাফেজ</span>
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="fas fa-graduation-cap"></i>
+          <span data-bn="আলেম" data-en="Alim">আলেম</span>
+        </div>
+        <div class="floating-badge badge-3">
+          <i class="fas fa-code"></i>
+          <span data-bn="ডেভেলপার" data-en="Developer">ডেভেলপার</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag" data-bn="পরিচয়" data-en="Introduction">পরিচয়</span>
+      <h2 class="section-title" data-bn="আমার সম্পর্কে" data-en="About Me">আমার সম্পর্কে</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="card-icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <h3 data-bn="ব্যক্তিগত তথ্য" data-en="Personal Info">ব্যক্তিগত তথ্য</h3>
+        <p data-bn="আমি হাফেজ মোঃ সাইদুল ইসলাম রাইয়ান। আমার বাড়ি পশ্চিম গাটিয়া ডেঙ্গা, সাতকানিয়া, চট্টগ্রাম। জন্ম: ৫ই আগস্ট ২০০৫।" data-en="I am Hafez Md Saidul Islam Raiyan from West Gatia Denga, Satkhira, Chittagong. Born: August 5, 2005.">আমি হাফেজ মোঃ সাইদুল ইসলাম রাইয়ান। আমার বাড়ি পশ্চিম গাটিয়া ডেঙ্গা, সাতকানিয়া, চট্টগ্রাম। জন্ম: ৫ই আগস্ট ২০০৫।</p>
+      </div>
+      <div class="about-card">
+        <div class="card-icon">
+          <i class="fas fa-book-quran"></i>
+        </div>
+        <h3 data-bn="দ্বীনি শিক্ষা" data-en="Islamic Education">দ্বীনি শিক্ষা</h3>
+        <p data-bn="আল্লাহর রহমতে কুরআন হেফজ সম্পন্ন করি শাহ আজম গরি (রহ.) হেফজখানায়। পরবর্তীতে আল জামিয়া আল ইসলামিয়া পটিয়া থেকে আলেম হিসেবে শিক্ষা সম্পন্ন করি।" data-en="By Allah's grace, completed Quran memorization at Shah Azam Gari Hifz Khana and graduated as Alim from Al Jamia Al Islamia Patiya.">আল্লাহর রহমতে কুরআন হেফজ সম্পন্ন করি শাহ আজম গরি (রহ.) হেফজখানায়। পরবর্তীতে আল জামিয়া আল ইসলামিয়া পটিয়া থেকে আলেম হিসেবে শিক্ষা সম্পন্ন করি।</p>
+      </div>
+      <div class="about-card">
+        <div class="card-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3 data-bn="প্রযুক্তি দক্ষতা" data-en="Tech Skills">প্রযুক্তি দক্ষতা</h3>
+        <p data-bn="দ্বীনি শিক্ষার পাশাপাশি আধুনিক প্রযুক্তি জ্ঞান অর্জন করে নিজেকে একজন দক্ষ ওয়েব ডেভেলপার এবং অফিস ম্যানেজমেন্ট প্রফেশনাল হিসেবে গড়ে তুলেছি।" data-en="Along with Islamic education, I have developed skills as a web developer and office management professional.">দ্বীনি শিক্ষার পাশাপাশি আধুনিক প্রযুক্তি জ্ঞান অর্জন করে নিজেকে একজন দক্ষ ওয়েব ডেভেলপার এবং অফিস ম্যানেজমেন্ট প্রফেশনাল হিসেবে গড়ে তুলেছি।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION TIMELINE -->
+<section class="education-section" id="education">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag" data-bn="পথচলা" data-en="Journey">পথচলা</span>
+      <h2 class="section-title" data-bn="শিক্ষা জীবন" data-en="Educational Journey">শিক্ষা জীবন</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-mosque"></i>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-badge" data-bn="হেফজ" data-en="Hifz">হেফজ</span>
+          <h3 data-bn="কুরআন হেফজ সম্পন্ন" data-en="Quran Memorization">কুরআন হেফজ সম্পন্ন</h3>
+          <h4 data-bn="শাহ আজম গরি (রহ.) হেফজখানা" data-en="Shah Azam Gari Hifz Khana">শাহ আজম গরি (রহ.) হেফজখানা</h4>
+          <p data-bn="পবিত্র কুরআন শরীফ হেফজ সম্পন্ন করি আল্লাহর অশেষ রহমতে।" data-en="Completed Quran memorization by Allah's endless mercy.">পবিত্র কুরআন শরীফ হেফজ সম্পন্ন করি আল্লাহর অশেষ রহমতে।</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-badge" data-bn="মাধ্যমিক" data-en="Secondary">মাধ্যমিক</span>
+          <h3 data-bn="মাধ্যমিক শিক্ষা" data-en="Secondary Education">মাধ্যমিক শিক্ষা</h3>
+          <h4 data-bn="ডলুকুল নুরিয়া কাসেমুল উলুম মাদ্রাসা" data-en="Dolukul Nuria Kasemul Uloom Madrasa">ডলুকুল নুরিয়া কাসেমুল উলুম মাদ্রাসা</h4>
+          <p data-bn="জামাতে মুতাফাররাখা থেকে জামাতে শাশুম পর্যন্ত পড়াশোনা সম্পন্ন করি।" data-en="Completed studies from Mutafarrakha to Shashum classes.">জামাতে মুতাফাররাখা থেকে জামাতে শাশুম পর্যন্ত পড়াশোনা সম্পন্ন করি।</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-badge" data-bn="উচ্চশিক্ষা" data-en="Higher">উচ্চশিক্ষা</span>
+          <h3 data-bn="আলেম ডিগ্রি" data-en="Alim Degree">আলেম ডিগ্রি</h3>
+          <h4 data-bn="আল জামিয়া আল ইসলামিয়া পটিয়া" data-en="Al Jamia Al Islamia Patiya">আল জামিয়া আল ইসলামিয়া পটিয়া</h4>
+          <p data-bn="ঐতিহ্যবাহী শিক্ষা প্রতিষ্ঠান থেকে কৃতিত্বের সাথে আলেম হিসেবে শিক্ষা সম্পন্ন করি।" data-en="Graduated with distinction as an Alim from this prestigious institution.">ঐতিহ্যবাহী শিক্ষা প্রতিষ্ঠান থেকে কৃতিত্বের সাথে আলেম হিসেবে শিক্ষা সম্পন্ন করি।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section class="skills-section" id="skills">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag" data-bn="যোগ্যতা" data-en="Expertise">যোগ্যতা</span>
+      <h2 class="section-title" data-bn="দক্ষতা ও অভিজ্ঞতা" data-en="Skills & Experience">দক্ষতা ও অভিজ্ঞতা</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-quran"></i>
+        </div>
+        <h3 data-bn="হাফেজে কুরআন" data-en="Hafez-e-Quran">হাফেজে কুরআন</h3>
+        <p data-bn="পবিত্র কুরআনের পূর্ণ হাফেজ" data-en="Complete memorization of the Holy Quran">পবিত্র কুরআনের পূর্ণ হাফেজ</p>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 100%"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-mosque"></i>
+        </div>
+        <h3 data-bn="ইসলামি শিক্ষা" data-en="Islamic Education">ইসলামি শিক্ষা</h3>
+        <p data-bn="দ্বীনি ইলমে প্রশিক্ষিত" data-en="Trained in Islamic knowledge">দ্বীনি ইলমে প্রশিক্ষিত</p>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 95%"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3 data-bn="ওয়েব ডেভেলপমেন্ট" data-en="Web Development">ওয়েব ডেভেলপমেন্ট</h3>
+        <p data-bn="HTML, CSS, JavaScript" data-en="HTML, CSS, JavaScript">HTML, CSS, JavaScript</p>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 85%"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3 data-bn="অফিস ম্যানেজমেন্ট" data-en="Office Management">অফিস ম্যানেজমেন্ট</h3>
+        <p data-bn="প্রফেশনাল ম্যানেজমেন্ট" data-en="Professional management">প্রফেশনাল ম্যানেজমেন্ট</p>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 90%"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-laptop"></i>
+        </div>
+        <h3 data-bn="কম্পিউটার দক্ষতা" data-en="Computer Skills">কম্পিউটার দক্ষতা</h3>
+        <p data-bn="প্রযুক্তি বিষয়ক কাজ" data-en="Technology-related work">প্রযুক্তি বিষয়ক কাজ</p>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 88%"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3 data-bn="যোগাযোগ দক্ষতা" data-en="Communication">যোগাযোগ দক্ষতা</h3>
+        <p data-bn="সাংগঠনিক ও যোগাযোগ" data-en="Organizational & communication">সাংগঠনিক ও যোগাযোগ</p>
+        <div class="skill-progress">
+          <div class="progress-bar" style="width: 92%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOALS SECTION -->
+<section class="goals-section">
+  <div class="section-container">
+    <div class="goals-content">
+      <div class="goals-icon">
+        <i class="fas fa-bullseye"></i>
+      </div>
+      <h2 data-bn="লক্ষ্য ও উদ্দেশ্য" data-en="Goals & Mission">লক্ষ্য ও উদ্দেশ্য</h2>
+      <p data-bn="আমার মূল লক্ষ্য হলো দ্বীনি ইলমের পাশাপাশি আধুনিক প্রযুক্তির জ্ঞানকে কাজে লাগিয়ে মানুষ ও সমাজের জন্য কল্যাণকর কিছু করা। ইসলামিক জ্ঞান ও প্রযুক্তির সমন্বয়ে সুন্দর ও উপকারী উদ্যোগ গ্রহণ করাই আমার ভবিষ্যৎ পরিকল্পনা।" data-en="My main goal is to combine Islamic knowledge with modern technology to benefit people and society. My future plan is to create beautiful and useful initiatives combining Islamic knowledge and technology.">আমার মূল লক্ষ্য হলো দ্বীনি ইলমের পাশাপাশি আধুনিক প্রযুক্তির জ্ঞানকে কাজে লাগিয়ে মানুষ ও সমাজের জন্য কল্যাণকর কিছু করা। ইসলামিক জ্ঞান ও প্রযুক্তির সমন্বয়ে সুন্দর ও উপকারী উদ্যোগ গ্রহণ করাই আমার ভবিষ্যৎ পরিকল্পনা।</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag" data-bn="যোগাযোগ" data-en="Get in Touch">যোগাযোগ</span>
+      <h2 class="section-title" data-bn="আমার সাথে যোগাযোগ করুন" data-en="Contact Me">আমার সাথে যোগাযোগ করুন</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h4 data-bn="ফোন" data-en="Phone">ফোন</h4>
+          <p><a href="tel:01850634779">০১৮৫০-৬৩৪৭৭৯</a></p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h4 data-bn="ইমেইল" data-en="Email">ইমেইল</h4>
+          <p><a href="mailto:sayedbinmustak01615@gmail.com">sayedbinmustak01615@gmail.com</a></p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h4 data-bn="ঠিকানা" data-en="Address">ঠিকানা</h4>
+          <p data-bn="পশ্চিম গাটিয়া ডেঙ্গা, সাতকানিয়া, চট্টগ্রাম, বাংলাদেশ" data-en="West Gatia Denga, Satkhira, Chittagong, Bangladesh">পশ্চিম গাটিয়া ডেঙ্গা, সাতকানিয়া, চট্টগ্রাম, বাংলাদেশ</p>
+        </div>
+      </div>
+      <div class="contact-social">
+        <h3 data-bn="সোশ্যাল মিডিয়া" data-en="Social Media">সোশ্যাল মিডিয়া</h3>
+        <div class="social-links">
+          <a href="https://wa.me/8801850634779" target="_blank" class="social-link whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://t.me/yourusername" target="_blank" class="social-link telegram">
+            <i class="fab fa-telegram"></i>
+            <span>Telegram</span>
+          </a>
+          <a href="mailto:sayedbinmustak01615@gmail.com" class="social-link email">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="map-section">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag" data-bn="অবস্থান" data-en="Location">অবস্থান</span>
+      <h2 class="section-title" data-bn="আমাকে খুঁজে নিন" data-en="Find Me">আমাকে খুঁজে নিন</h2>
+    </div>
+    <div class="map-wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.2129119199512!2d92.0298880097112!3d22.097736979748607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad110053eb357d%3A0x8d4642cb8e38d663!2z4Ka54Ka-4Kar4KeH4KacIOCmuOCmvuCmiOCmpuCnh-CmsCDgpqzgpr7gp5bgpr8!5e1!3m2!1sen!2sbd!4v1770653425892!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <p data-bn="© ২০২৬ হাফেজ মোঃ সাইদুল ইসলাম রাইয়ান। সব অধিকার সংরক্ষিত।" data-en="© 2026 Hafez Md Saidul Islam Raiyan. All rights reserved.">© ২০২৬ হাফেজ মোঃ সাইদুল ইসলাম রাইয়ান। সব অধিকার সংরক্ষিত।</p>
+    <p class="footer-quote" data-bn="সবার দোয়া ও সহযোগিতা কাম্য" data-en="Your prayers and support are appreciated">সবার দোয়া ও সহযোগিতা কাম্য</p>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="portfolio-v2.js"></script>
+</body>
+</html>
