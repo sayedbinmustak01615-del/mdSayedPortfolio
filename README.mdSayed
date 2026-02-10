@@ -1,0 +1,158 @@
+# 🌟 পোর্টফোলিও ওয়েবসাইট - হাফেজ মোঃ সাইদুল ইসলাম রাইয়ান
+
+একটি সুন্দর, আধুনিক এবং সম্পূর্ণ responsive পার্সোনাল পোর্টফোলিও ওয়েবসাইট।
+
+## 📁 ফাইলসমূহ
+
+1. **portfolio.html** - মূল HTML ফাইল
+2. **portfolio.css** - স্টাইলিং ফাইল
+3. **portfolio.js** - JavaScript ফাইল
+
+## 🎨 ডিজাইন থিম
+
+- **রঙ**: ইসলামিক গ্রীন এবং গোল্ড
+- **ফন্ট**: Noto Sans Bengali
+- **স্টাইল**: মডার্ন, ক্লিন, প্রফেশনাল
+
+## ✨ বৈশিষ্ট্যসমূহ
+
+### ✅ Hero Section
+- নাম, পরিচয়, ট্যাগলাইন
+- প্রোফাইল ছবি (আপলোড করা যায়)
+- Call-to-action বাটন
+
+### ✅ About Section
+- তিনটি কার্ড: পরিচয়, দ্বীনি শিক্ষা, বর্তমান
+
+### ✅ Education Timeline
+- হেফজ সম্পন্ন
+- মাধ্যমিক শিক্ষা
+- উচ্চশিক্ষা
+
+### ✅ Skills Section
+- ৬টি দক্ষতা কার্ড
+- সুন্দর আইকন এবং হোভার ইফেক্ট
+
+### ✅ Goals Section
+- লক্ষ্য ও উদ্দেশ্য
+
+### ✅ Contact Section
+- মোবাইল, ইমেইল, ঠিকানা
+- সোশ্যাল মিডিয়া বাটন:
+  - WhatsApp
+  - Telegram
+  - Email
+
+## 📸 ছবি আপলোড করার নিয়ম
+
+### পদ্ধতি ১: সরাসরি ক্লিক করে
+1. ওয়েবসাইট খুলুন
+2. প্রোফাইল ছবিতে **ক্লিক** করুন
+3. আপনার ছবি সিলেক্ট করুন
+4. ছবি অটোমেটিক সেভ হয়ে যাবে
+
+### পদ্ধতি ২: HTML ফাইল এডিট করে
+`portfolio.html` ফাইলে যান এবং এই লাইনটি খুঁজুন:
+```html
+<img src="profile-placeholder.jpg" alt="হাফেজ মোঃ সাইদুল ইসলাম রাইয়ান" class="profile-image" id="profileImage"/>
+```
+
+এখানে `profile-placeholder.jpg` এর জায়গায় আপনার ছবির নাম দিন:
+```html
+<img src="your-photo.jpg" alt="হাফেজ মোঃ সাইদুল ইসলাম রাইয়ান" class="profile-image" id="profileImage"/>
+```
+
+**নোট**: ছবিটি HTML ফাইলের সাথে একই ফোল্ডারে রাখুন।
+
+## 🔗 সোশ্যাল লিংক আপডেট করার নিয়ম
+
+`portfolio.html` ফাইলের Contact Section এ যান:
+
+```html
+<!-- WhatsApp এর জন্য -->
+<a href="https://web.whatsapp.com/" target="_blank" class="social-btn whatsapp">
+
+<!-- Telegram এর জন্য -->
+<a href="https://web.telegram.org/k/" target="_blank" class="social-btn telegram">
+
+<!-- Email এর জন্য -->
+<a href="mailto:sayedbinmustak01615@gmail.com" class="social-btn email">
+```
+
+এখানে আপনার নিজের লিংক দিয়ে পরিবর্তন করুন।
+
+### WhatsApp লিংক তৈরি:
+```
+https://wa.me/8801850634779
+```
+(আপনার নম্বর দিন +88 সহ, কোন স্পেস বা ড্যাশ ছাড়া)
+
+### Telegram লিংক তৈরি:
+```
+https://t.me/yourusername
+```
+(আপনার Telegram username দিন)
+
+## 🚀 কিভাবে ব্যবহার করবেন
+
+1. তিনটি ফাইল একই ফোল্ডারে রাখুন
+2. `portfolio.html` ফাইলটি ব্রাউজারে খুলুন
+3. আপনার ছবি আপলোড করুন
+4. সব কিছু চেক করুন
+
+## 📱 Responsive Design
+
+এই ওয়েবসাইট সব ডিভাইসে সুন্দরভাবে কাজ করবে:
+- 💻 Desktop
+- 📱 Mobile
+- 📱 Tablet
+
+## 🎯 Features
+
+### Interactive Features:
+- ✅ Smooth scrolling
+- ✅ Hover animations
+- ✅ Scroll-to-top button
+- ✅ Image upload functionality
+- ✅ Notification system
+- ✅ Scroll animations
+
+### Design Features:
+- ✅ Modern gradient backgrounds
+- ✅ Islamic color theme (Green & Gold)
+- ✅ Professional typography
+- ✅ Card-based layouts
+- ✅ Shadow effects
+- ✅ Responsive grid systems
+
+## 🔧 কাস্টমাইজেশন
+
+### রঙ পরিবর্তন করতে:
+`portfolio.css` ফাইলের শুরুতে:
+```css
+:root {
+  --green-dark: #1b3a2d;
+  --green-mid: #2e6b4f;
+  --gold: #c9a84c;
+  /* এখানে রঙ পরিবর্তন করুন */
+}
+```
+
+### ফন্ট পরিবর্তন করতে:
+HTML এর head সেকশনে ফন্ট লিংক পরিবর্তন করুন।
+
+## 📞 সাপোর্ট
+
+কোন সমস্যা হলে যোগাযোগ করুন:
+- 📞 ০১৮৫০-৬৩৪৭৭৯
+- 📧 sayedbinmustak01615@gmail.com
+
+## 📝 লাইসেন্স
+
+© ২০২৬ হাফেজ মোঃ সাইদুল ইসলাম রাইয়ান। সব অধিকার সংরক্ষিত।
+
+---
+
+**তৈরি করেছে**: AI Assistant  
+**সংস্করণ**: 1.0.0  
+**তারিখ**: ফেব্রুয়ারি ২০২৬
